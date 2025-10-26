@@ -197,5 +197,33 @@ public class AlistirmaSorulari_1 {
         System.out.println("j = " + tahminJ);
         System.out.println("k = " + tahminK);
         System.out.println("l = " + tahminL);
+
+        // Soru 28= Toplam dakika miktarı değerini aşağıdaki örnekte olduğu gibi saat ve dakika cinsinden konsola yazan JAVA programını yazınız.
+
+        int toplamDakika = 130;
+        int saat = toplamDakika / 60;
+        int dakika = toplamDakika % 60;
+        System.out.println("Saat: " + saat + ", Dakika: " + dakika);
+
+        // Soru 29 = Şu anki toplam nüfus ve yıllık nüfus artış yüzdesi bilgilerine göre 3 yıllık nüfus projeksiyonu yapan programı yazınız.
+
+        int suAnkiNufus = 1000000;
+        double yillikArtisYuzdesi = 2.0; // yüzde
+        for (int yil = 1; yil <= 3; yil++) {
+            suAnkiNufus += suAnkiNufus * (yillikArtisYuzdesi / 100);
+            System.out.println(yil + ". yıl nüfus: " + suAnkiNufus);
+        }
+
+        // Soeu 30 = Bir aracın gideceği mesafe (km), bir litre benzin ile kaç km yol gittiği ve benzinin
+        //litre fiyatı bilgilerine göre, bu mesafenin araç sahibine kaç TL'ye malolacağını hesaplayan ve
+        //konsola yazdıran JAVA programını yazınız.
+
+        double gidilecekMesafe = 150.0; // km
+        double aracYakitVerimliligi = 15.0; // km/l
+        double benzinLitreFiyati = 7.5; // TL/litre
+        double gerekenBenzinMiktari = gidilecekMesafe / aracYakitVerimliligi;
+        double toplamMaliyet3 = gerekenBenzinMiktari * benzinLitreFiyati;
+        System.out.println("Toplam Maliyet: " + toplamMaliyet3 + " TL");
+
     }
 }
